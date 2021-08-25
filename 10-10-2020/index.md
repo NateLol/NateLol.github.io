@@ -1,0 +1,108 @@
+# Opening of the blog!
+
+
+After few hours of template searching, I have found myself this particular template that I love. So, it's official now! I have a new blog running.
+
+
+
+As the first post here, I would like to record the process of creating and deploying this blog so people who wants to do the same can have some reference. Hope this post can be helpful!
+
+
+
+## Prerequisites
+
+This blog is built with [Hugo](https://gogugo.io) and one of the popular themes [LoveIt](https://github.com/dillonzq/LoveIt). To deploy your blog on [Github Pages](https://pages.github.com/), you need to register [here](https://github.com) if you don't already have an account.
+
+## Installation and Deployment
+
+
+
+### Step 1: Install Hugo
+
+I build and code on Macbook with [Homebrew](https://brew.sh/), so this insturction will be for MacOS only.
+
+```bash
+# install the latest version of hugo
+brew install hugo
+
+# to verify your new install
+hugo version
+```
+
+### Step 2: Create a New Site
+
+This will create a new Hugo site in a folder named `blog`.
+
+```bash
+hugo new site blog
+```
+
+### Step 3: Add a Theme
+
+In this blog, we use [LoveIt](https://github.com/dillonzq/LoveIt) as the theme .
+
+```bash
+cd blog
+git init
+git submodule add https://github.com/dillonzq/LoveIt themes/loveit
+
+# to set loveit as the default theme
+echo 'theme = loveit' >> config.toml
+```
+
+### Step 4: Set up Souce Code Repo
+
+Create on github a empty new project `blog`  to keep track of the source code.
+
+```bash
+git branch -M main
+git remote add origin https://github.com/<your name>/project.git
+```
+
+### Step 5: Build and Preview Site
+
+Before we continue to deploy on Github Pages, we first preview the site by
+
+```bash
+hugo serve
+```
+
+then navigate to [localhost:1313](http://localhost:1313) to check if the site is working properly. If so, hit `ctrl+c` to stop and remove `public ` folder by
+
+```bash
+rm -rf public
+```
+
+### Step 6: Set up Github Page Repo
+
+As a next step, we need first to create on github a page repo named `<yourname>.github.io` and add it as a submodule.
+
+```bash
+git submodule add https://github.com/<yourname>/<yourname>.github.io.git public
+```
+
+### Step 7: Deploy!
+
+You are right about to finish by simply run following:
+
+```bash
+# build site
+hugo
+# push source code for version control
+git push origin main
+
+cd public
+git add.
+git commit -m "Any commits you want"
+# push to github page
+git push origin main
+
+```
+
+### Step 8: Yay!
+
+You are all set and you can visit your blog at `https://<yourname>.github.io`.
+
+
+
+An update on how to use Github Actions building the blog is on the way!
