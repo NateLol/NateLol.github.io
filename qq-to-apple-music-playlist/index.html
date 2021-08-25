@@ -233,6 +233,31 @@ Cancel
 </div>
 <div class=post-nav><a href=/nca/ class=prev rel=prev title="Neighbour Components Anaysis"><i class="fas fa-angle-left fa-fw"></i>Neighbour Components Anaysis</a></div>
 </div>
+<aside aria-label=note class=note>
+<section id=comment-thankyou style=display:none;margin-left:5px>
+Thank you for your comment, it will be displayed once it has been approved!
+</section>
+</aside>
+<script type=application/javascript>/comment-thankyou/.test(window.location.href)?document.getElementById('comment-thankyou').style.display='block':document.getElementById('comment-thankyou').style.display='none'</script>
+<button id=staticman-button onclick=showComments()>Show comments</button>
+<section id=staticman-comments class="js-comments staticman-comments">
+<script type=application/javascript>var onloadCallbackCaptcha=function(a){grecaptcha.render('div-recaptcha')};function showComments(){var a=document.getElementById('staticman-button'),c,b;a.parentNode.removeChild(a),c=document.getElementById('staticman-comments'),c.style.display='block',b=document.createElement('script'),b.setAttribute('src','https://www.google.com/recaptcha/api.js?onload=onloadCallbackCaptcha&render=explicit'),document.head.appendChild(b)}function checkForm(a){return typeof grecaptcha=="undefined"?(a.warningComment.style.display='block',a.warningComment.innerText="There was a problem loading the reCaptcha so it is not possible to submit a comment at the moment",!1):grecaptcha.getResponse()==""?(a.warningComment.style.display='block',a.warningComment.innerText="Please confirm you are not a robot :)",!1):a.yourname.value==""?(a.warningComment.style.display='block',a.warningComment.innerText="Please type your name",!1):a.yourcomment.value==""?(a.warningComment.style.display='block',a.warningComment.innerText="Please type a comment",!1):(a.submitButton.disabled=!0,a.warningComment.style.display='none',a.warningComment.innerText="",a.submitButton.innerText="Sending...",!0)}</script>
+<noscript>Enable JavaScript to view comments.</noscript>
+<h3>No comments</h3>
+<form class="js-form form" method=post action=https://mstcn.herokuapp.com/v2/entry/natelol/comments/main/comments onsubmit="return checkForm(this)">
+<fieldset>
+<input type=hidden name=options[redirect] value=https://natelol.github.io/qq-to-apple-music-playlist/#comment-thankyou>
+<input type=hidden name=options[slug] value=qq-to-apple-music-playlist>
+<input type=hidden name=options[parent]>
+<label for=fields[name]>Name:</label>
+<input name=fields[name] id=yourname type=text placeholder="Your name">
+<label for=fields[comment]>Comment:</label>
+<textarea name=fields[comment] id=yourcomment placeholder="What are you thinking?"></textarea>
+<output id=warningComment></output>
+<button class=button id=submitButton>Submit</button>
+</fieldset>
+</form>
+</section>
 <div id=comments></div></article></div>
 </main><footer class=footer>
 <div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
