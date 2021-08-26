@@ -262,43 +262,88 @@ git push origin main
 <div class=post-nav>
 <a href=/nca/ class=next rel=next title="Neighbour Components Anaysis">Neighbour Components Anaysis<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
-<aside aria-label=note class=note>
-<section id=comment-thankyou style=display:none;margin-left:5px>
-Thank you for your comment, it will be displayed once it has been approved!
-</section>
-</aside>
-<script type=application/javascript>/comment-thankyou/.test(window.location.href)?document.getElementById('comment-thankyou').style.display='block':document.getElementById('comment-thankyou').style.display='none'</script>
-<button id=staticman-button onclick=showComments()>Show comments</button>
-<section id=staticman-comments class="js-comments staticman-comments">
+<div style=margin-top:5rem>
+<staticman class="js-comments staticman-comments">
 <script type=application/javascript>var onloadCallbackCaptcha=function(a){grecaptcha.render('div-recaptcha')};function showComments(){var a=document.getElementById('staticman-button'),c,b;a.parentNode.removeChild(a),c=document.getElementById('staticman-comments'),c.style.display='block',b=document.createElement('script'),b.setAttribute('src','https://www.google.com/recaptcha/api.js?onload=onloadCallbackCaptcha&render=explicit'),document.head.appendChild(b)}function checkForm(a){return a.yourname.value==""?(a.warningComment.style.display='block',a.warningComment.innerText="Please type your name",!1):a.yourcomment.value==""?(a.warningComment.style.display='block',a.warningComment.innerText="Please type a comment",!1):(a.submitButton.disabled=!0,a.warningComment.style.display='none',a.warningComment.innerText="",a.submitButton.innerText="Sending...",!0)}</script>
 <noscript>Enable JavaScript to view comments.</noscript>
-<h3>1 comment</h3>
+<h3>3 comments</h3>
 <article id=comment-1 class=static-comment>
-<div class=comment-author>
-<strong>Nate</strong>
+<img class=comment-avatar src="https://www.gravatar.com/avatar/?s=48" alt="Nate's gravatar">
+<h4>
+<span class=comment-author>Nate</span>
+<span class=comment-timestamp><a href=#comment-1 title="Permalink to this comment"><time datetime=2021-08-25T14:56:35.449Z>Aug 25, 2021 14:56:35</time></a></span>
+</h4>
+<div class=comment-content>testing</div>
+<div class=comment-reply-btn>
+<a id=a47d4cd0-05b4-11ec-b678-c7245c07af85 class="btn reply-btn" href=#comment-form title=a47d4cd0-05b4-11ec-b678-c7245c07af85>Reply to this comment</a>
 </div>
-<div class=comment-timestamp>
-<a href=#comment-1 title="Permalink to this comment">
-<time datetime=2021-08-25T14:56:35.449Z>25 Aug 2021 14:56</time>
-</a>
-</div>
-<div class=comment-content><p>testing</p></div>
 </article>
-<form class="js-form form" method=post action=https://mstcn.herokuapp.com/v2/entry/natelol/comments/main/comments onsubmit="return checkForm(this)">
-<fieldset>
-<input type=hidden name=options[redirect] value=https://natelol.github.io/10-10-2020/#comment-thankyou>
+<article id=comment-2 class=static-comment>
+<img class=comment-avatar src="https://www.gravatar.com/avatar/?s=48" alt="nate's gravatar">
+<h4>
+<span class=comment-author>nate</span>
+<span class=comment-timestamp><a href=#comment-2 title="Permalink to this comment"><time datetime=2021-08-26T08:45:38.646Z>Aug 26, 2021 08:45:38</time></a></span>
+</h4>
+<div class=comment-content>well this content review $$x^e$$wowo this works like a charm</div>
+<div class=comment-reply-btn>
+<a id=fcd15800-0649-11ec-a58c-471dba33647f class="btn reply-btn" href=#comment-form title=fcd15800-0649-11ec-a58c-471dba33647f>Reply to this comment</a>
+</div>
+</article>
+<article id=comment-3 class=static-comment>
+<img class=comment-avatar src="https://www.gravatar.com/avatar/19e4d60c6c606f73188a8d4691712c9f?s=48" alt="Steven's gravatar">
+<h4>
+<span class=comment-author>Steven</span>
+<span class=comment-timestamp><a href=#comment-3 title="Permalink to this comment"><time datetime=2021-08-26T10:07:09.487Z>Aug 26, 2021 10:07:09</time></a></span>
+</h4>
+<div class=comment-content>Can I ask that when will this work as a charm $v_2$ heihei</div>
+<div class=comment-reply-btn>
+<a id=5ff74470-0655-11ec-a662-9b0befe0715b class="btn reply-btn" href=#comment-form title=5ff74470-0655-11ec-a662-9b0befe0715b>Reply to this comment</a>
+</div>
+</article>
+<form id=comment-form class="js-form form" method=post>
+<h4 class="reply-notice hidden">
+<strong class=reply-arrow><i class="fas fa-share"></i></strong>
+<strong class=reply-name></strong>
+</h4>
 <input type=hidden name=options[slug] value=10-10-2020>
 <input type=hidden name=options[parent]>
-<label for=fields[name]>Name:</label>
-<input name=fields[name] id=yourname type=text placeholder="Your name">
-<label for=fields[comment]>Comment:</label>
-<textarea name=fields[comment] id=yourcomment placeholder="What are you thinking?"></textarea>
-<output id=warningComment></output>
-<button class=button id=submitButton>Submit</button>
+<input type=hidden name=fields[replyThread]>
+<input type=hidden name=fields[replyID]>
+<input type=hidden name=fields[replyName]>
+<p>Your email address will not be published. Required fields are marked *.</p>
+<fieldset>
+<div class=textfield>
+<textarea name=fields[comment] placeholder="You can use Markdown syntax*"></textarea>
+</div>
+</fieldset>
+<fieldset>
+<div class=textfield>
+<input name=fields[name] type=text placeholder="Your name*">
+</div>
+</fieldset>
+<fieldset>
+<div class=textfield>
+<input type=email name=fields[email] placeholder="Your email address*">
+</div>
+</fieldset>
+<fieldset>
+<div class=textfield>
+<input type=url name=fields[website] placeholder="You website">
+</div>
+</fieldset>
+<p class=js-notice>
+<strong class="js-notice-text submit-success hidden">Thanks for your comment! It will show on the site once it has been approved.</strong>
+<strong class="js-notice-text submit-failed hidden">Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+</p>
+<fieldset>
+<button type=submit class=btn>Submit comment</button>
+<button type=submit class="btn hidden" disabled>Submitted</button>
+<button type=reset class=btn value=Reset>Reset</button>
 </fieldset>
 </form>
-</section>
-<div id=comments></div></article></div>
+<div id=commentPreview class=comment-preview></div>
+</staticman>
+</div><div id=comments></div></article></div>
 </main><footer class=footer>
 <div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
 </div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2019 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Guodong</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
@@ -309,5 +354,5 @@ Thank you for your comment, it will be displayed once it has been approved!
 </a><a href=# id=view-comments class=fixed-button title="View Comments">
 <i class="fas fa-comment fa-fw"></i>
 </a>
-</div><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},cookieconsent:{content:{dismiss:"Got it!",link:"Learn more",message:"This website uses Cookies to improve your experience."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
+</div><link rel=stylesheet href=/lib/bootstrap/bootstrap.min.css><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/showdown/showdown.min.js></script><script type=text/javascript src=/lib/jquery/jquery-3.5.1.slim.min.js></script><script type=text/javascript src=/lib/bootstrap/bootstrap.min.js></script><script type=text/javascript src=/js/staticman.js></script><script type=text/javascript src=/js/staticman-preview.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},cookieconsent:{content:{dismiss:"Got it!",link:"Learn more",message:"This website uses Cookies to improve your experience."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:50,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
 </html>
