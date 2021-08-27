@@ -24,5 +24,5 @@ $$
 f(A) = \max_{A}\sum_{i}\sum_{j \in C_i}p_{ij}
 $$
 
-test
+
 
