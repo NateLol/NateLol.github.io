@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
   $('.js-form').submit(function () {
     var form = this;
-    let url = '{{ .api }}';
+    let url = 'https://mstcn.herokuapp.com/v2/entry/natelol/comments/main/comments';
     let data = $(this).serialize();
 
     $(form).addClass('form--loading');
