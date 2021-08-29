@@ -88,6 +88,14 @@ Cancel
 </h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=" author" class=author><i class="fas fa-user-circle fa-fw"></i>Guodong</a></span>&nbsp;<span class=post-publish>published on <time datetime=2020-10-18>2020-10-18</time></span>&nbsp;<span class=post-category>included in <a href=/categories/misc/><i class="far fa-folder fa-fw"></i>Misc</a></span></div><div class=content>I came to find out that I can no longer listen to QQ music since I moved here to Singapore. That is definitely something I need to take care of since we all need some of the medoly to boost our work. After a quick seach, I have found this perticular approach that can help with that. What&rsquo;s more, new Apple music subscriber would have a long period of 3 months free service.</div><div class=post-footer>
 <a href=/qq-to-apple-music-playlist/>Read More</a></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><div class=featured-image-preview>
+<a href=/neighbour-component-analysis/><img class=lazyload src=/svg/loading.min.svg data-src=NCA.png data-srcset="/NCA.png, NCA.png 1.5x, /NCA.png 2x" data-sizes=auto alt=/NCA.png title=/NCA.png></a>
+</div><h1 class=single-title itemprop="name headline">
+<a href=/neighbour-component-analysis/>Neighbour Components Anaysis</a>
+</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=" author" class=author><i class="fas fa-user-circle fa-fw"></i>Guodong</a></span>&nbsp;<span class=post-publish>published on <time datetime=2020-10-11>2020-10-11</time></span>&nbsp;<span class=post-category>included in <a href=/categories/ml/><i class="far fa-folder fa-fw"></i>ML</a></span></div><div class=content>Neighbour Components Analysis (NCA) learns a linear transfromation for the input space such that in the transformed space, KNN performs well.
+Let $Q = A^TA$, we have $$ \begin{aligned}d(x,y) &= (x-y)^T Q (x-y) \\ &= (x-y)^TA^TA(x-y) \\&= (Ax-Ay)^T(Ax-Ay)\end{aligned} $$ NCA proposes to use a softmax value to represent the probability that for a given sample $i$, sample $j$ is selected as its neighbour. $$ p_{ij} = \frac{\exp(-||Ax_i - Ax_j||^2)}{\sum_{k \neq i} \exp(-||Ax_i - Ax_k||^2)} $$ which is the pair similarity over all posible pairs, looking for the nearnest sample in the new space.</div><div class=post-footer>
+<a href=/neighbour-component-analysis/>Read More</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/nca/>nca</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><div class=featured-image-preview>
 <a href=/10-10-2020/><img class=lazyload src=/svg/loading.min.svg data-src=10-10-2020.png data-srcset="/10-10-2020.png, 10-10-2020.png 1.5x, /10-10-2020.png 2x" data-sizes=auto alt=/10-10-2020.png title="Opening of the blog!"></a>
 </div><h1 class=single-title itemprop="name headline">
 <a href=/10-10-2020/>Opening of the blog!</a>
@@ -96,13 +104,6 @@ As the first post here, I would like to record the process of creating and deplo
 Prerequisites This blog is built with Hugo and one of the popular themes LoveIt.</div><div class=post-footer>
 <a href=/10-10-2020/>Read More</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/hugo/>hugo</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/neighbour-component-analysis/></a>
-</h1><div class=post-meta><span class=post-author><a href=/ title=Author rel=" author" class=author><i class="fas fa-user-circle fa-fw"></i>Guodong</a></span>&nbsp;<span class=post-publish>published on <time datetime=0001-01-01>0001-01-01</time></span></div><div class=content>neighbou&mdash; title: &ldquo;Neighbour Components Anaysis&rdquo; date: 2020-10-11T20:40:22+08:00 draft: false author: &ldquo;Guodong&rdquo; authorLink: "" description: &ldquo;NCA&rdquo; license: "" images: []
-tags: [nca] categories: [ML] featuredImage: &ldquo;NCA.png&rdquo;
-hiddenFromHomePage: false hiddenFromSearch: false twemoji: false lightgallery: true ruby: true fraction: true fontawesome: true linkToMarkdown: true rssFullText: false
-toc: enable: true auto: true code: copy: true math: enable: true mapbox: accessToken: "" share: enable: true comment: enable: false Neighbour Components Analysis (NCA) learns a linear transfromation for the input space such that in the transformed space, KNN performs well.</div><div class=post-footer>
-<a href=/neighbour-component-analysis/>Read More</a></div>
 </article></div></div>
 </main><footer class=footer>
 <div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>

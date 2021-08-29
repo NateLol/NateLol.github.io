@@ -1,44 +1,5 @@
-# 
+# Neighbour Components Anaysis
 
-neighbou---
-title: "Neighbour Components Anaysis"
-date: 2020-10-11T20:40:22+08:00
-draft: false
-author: "Guodong"
-authorLink: ""
-description: "NCA"
-license: ""
-images: []
-
-tags: [nca]
-categories: [ML]
-featuredImage: "NCA.png"
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
-twemoji: false
-lightgallery: true
-ruby: true
-fraction: true
-fontawesome: true
-linkToMarkdown: true
-rssFullText: false
-
-
-toc:
-  enable: true
-  auto: true
-code:
-  copy: true
-math:
-  enable: true
-mapbox:
-  accessToken: ""
-share:
-  enable: true
-comment:
-  enable: false
----
 
 **Neighbour Components Analysis (NCA)** learns a linear transfromation for the input space such that in the transformed space, KNN performs well.
 
@@ -62,5 +23,6 @@ Thus the overall objective is to find tha optimum $A$ such that,
 $$
 f(A) = \max_{A}\sum_{i}\sum_{j \in C_i}p_{ij}
 $$
+
 
 
