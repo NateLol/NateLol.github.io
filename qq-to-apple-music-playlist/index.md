@@ -13,7 +13,7 @@ With all that being said, let's get started on the transfer. The steps are not t
 2. Next, right click on the blank tab and select `Inspect` from the poppped-up window.
 3. Then find `Console` on the table and paste following code there, do not hit `Enter` just yet,
 
-```html
+```javascript
 (function () {
     var script = document.createElement("SCRIPT");
     script.src = 'https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js';
@@ -57,7 +57,7 @@ With all that being said, let's get started on the transfer. The steps are not t
 
 4. Navigate your web QQ music to the desired playlist page that you would like to transfer to Apple. Find the play list ID from the url like,
 
-```html
+```url
 https://y.qq.com/n/yqq/playlist/
 [your play list here]
 .html#stat=y_new.profile.create_playlist.love.click&dirid=201
