@@ -106,4 +106,3 @@ You are all set and you can visit your blog at `https://<yourname>.github.io`.
 
 
 An update on how to use Github Actions building the blog is on the way!
-
