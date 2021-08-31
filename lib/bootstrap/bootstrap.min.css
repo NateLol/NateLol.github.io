@@ -16,7 +16,7 @@ a:active, a:hover { outline: 0 }
 abbr[title] { border-bottom: 1px dotted }
 b, strong { font-weight: 700 }
 dfn { font-style: italic }
-h1 { margin: .67em 0; font-size: 2em }
+/*h1 { margin: .67em 0; font-size: 2em }*/
 mark { color: #000; background: #ff0 }
 small { font-size: 80% }
 sub, sup { position: relative; font-size: 75%; line-height: 0; vertical-align: baseline }
@@ -356,7 +356,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0 }
 .sr-only-focusable:active, .sr-only-focusable:focus { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto }
 [role=button] { cursor: pointer }
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit }
+/*.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit }
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small { font-weight: 400; line-height: 1; color: #777 }
 .h1, .h2, .h3, h1, h2, h3 { margin-top: 20px; margin-bottom: 10px }
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small { font-size: 65% }
@@ -368,7 +368,7 @@ hr { margin-top: 20px; margin-bottom: 20px; border: 0; border-top: 1px solid #ee
 .h4, h4 { font-size: 18px }
 .h5, h5 { font-size: 14px }
 .h6, h6 { font-size: 12px }
-p { margin: 0 0 10px }
+p { margin: 0 0 10px }*/
 .lead { margin-bottom: 20px; font-size: 16px; font-weight: 300; line-height: 1.4 }
 @media (min-width:768px) {
 	.lead { font-size: 21px }
