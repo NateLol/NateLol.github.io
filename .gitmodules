@@ -1,0 +1,6 @@
+[submodule "themes/loveit"]
+	path = themes/loveit
+	url = git@github.com:natelol/loveit.git
+[submodule "data/comments"]
+	path = data/comments
+	url = git@github.com:natelol/comments
