@@ -16,17 +16,9 @@
 
 # Commit changes.
 
-rm -rf .git
-rm -f .gitmodules
-rm -rf data
-rm -rf themes
 
-git init
 
-git config --global submodule.recurse true
-
-git submodule add git@github.com:natelol/loveit.git themes/loveit
-git submodule add git@github.com:natelol/comments data/comments
+git submodule update --recursive --merge
 
 git add .
 
