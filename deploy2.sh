@@ -18,7 +18,7 @@
 
 
 
-git submodule update --recursive --merge
+git submodule update --remote --recursive --merge
 
 git add .
 
